@@ -23,7 +23,6 @@ from losses import *
 from models.model_zoo import get_segmentation_model
 from models.tailoring import Tailoring
 
-from utils.sagan import Discriminator
 from utils.distributed import *
 from utils.logger import setup_logger
 from utils.score import SegmentationMetric
@@ -76,7 +75,6 @@ def parse_args():
     # cuda setting
     parser.add_argument('--gpu-id', type=str, default='0')
     parser.add_argument('--no-cuda', action='store_true', default=False, help='disables CUDA training')
-    # parser.add_argument('--local-rank', type=int, default=0)
     parser.add_argument('--local_rank', type=int, default=0)
     # checkpoint and log
     parser.add_argument('--resume', type=str, default=None, help='put the path to resuming file if needed')
@@ -97,12 +95,6 @@ def parse_args():
     parser.add_argument('--val-epoch', type=int, default=1, help='run validation every val-epoch')
     parser.add_argument('--skip-val', action='store_true', default=False, help='skip validation during training')
     args = parser.parse_args()
-
-    # seed = 1234
-    # random.seed(seed)
-    # np.random.seed(seed)
-    # torch.manual_seed(seed)
-    # torch.cuda.manual_seed_all(seed)
 
     num_gpus = int(os.environ["WORLD_SIZE"]) if "WORLD_SIZE" in os.environ else 1
     if num_gpus > 1 and args.local_rank == 0:
