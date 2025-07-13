@@ -30,10 +30,15 @@ KT effectively improves student performance without requiring extra models or si
 ## Requirement
 
 Ubuntu 18.04 LTS
+
 Python 3.8 (Anaconda is recommended)
+
 CUDA 11.4
+
 PyTorch 1.8.0
+
 NCCL for CUDA 11.4
+
 Install python packages:
 ```bash
 pip install timm==0.3.2
