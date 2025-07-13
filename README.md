@@ -6,7 +6,7 @@ Official PyTorch implementation of:
 
 ---
 
-## 📋 Overview
+## Overview
 
 Knowledge Tailoring (KT) is a novel knowledge distillation framework designed to mitigate the **teacher-student gap** in semantic segmentation.  
 It introduces two key modules:
@@ -18,7 +18,7 @@ KT effectively improves student performance without requiring extra models or si
 
 ---
 
-## 📌 Highlights
+## Highlights
 
 - Tailored knowledge distillation for both encoder and decoder in semantic segmentation.
 - Addresses both capacity gap and task difficulty in a unified framework.
@@ -27,7 +27,7 @@ KT effectively improves student performance without requiring extra models or si
 
 ---
 
-## 🚀 Requirement
+## Requirement
 
 Ubuntu 18.04 LTS
 Python 3.8 (Anaconda is recommended)
@@ -39,3 +39,29 @@ Install python packages:
 pip install timm==0.3.2
 pip install mmcv-full==1.2.7
 pip install opencv-python==4.5.1.48
+```
+
+---
+
+## Dataset
+
+We conduct experiments on the following datasets:
+
+Cityscapes
+ADE20K
+Pascal VOC
+
+Please download the datasets and organize them as follows:
+datasets/
+├── cityscapes/
+├── ade20k/
+└── voc/
+
+---
+
+## Training
+Example (Cityscapes)
+
+```bash
+sh train_KT.sh
+```
