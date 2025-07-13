@@ -43,22 +43,6 @@ pip install opencv-python==4.5.1.48
 
 ---
 
-## Dataset
-
-We conduct experiments on the following datasets:
-
-Cityscapes
-ADE20K
-Pascal VOC
-
-Please download the datasets and organize them as follows:
-datasets/
-├── cityscapes/
-├── ade20k/
-└── voc/
-
----
-
 ## Training
 Example (Cityscapes)
 
