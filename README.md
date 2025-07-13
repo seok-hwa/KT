@@ -1,7 +1,6 @@
-# Knowledge Tailoring (KT)
+# Knowledge Tailoring: Bridging the Teacher-Student Gap in Semantic Segmentation
 
-**Knowledge Tailoring: Bridging the Teacher-Student Gap in Semantic Segmentation**  
-Seokhwa Cheung, Seungbeom Woo, Taehoon Kim, Wonjun Hwang
+> Seokhwa Cheung, Seungbeom Woo, Taehoon Kim, Wonjun Hwang
 ---
 
 ## Overview
