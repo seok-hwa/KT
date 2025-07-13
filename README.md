@@ -1,9 +1,7 @@
 # Knowledge Tailoring (KT)
 
-Official PyTorch implementation of:
-
 **Knowledge Tailoring: Bridging the Teacher-Student Gap in Semantic Segmentation**  
-
+Seokhwa Cheung, Seungbeom Woo, Taehoon Kim, Wonjun Hwang
 ---
 
 ## Overview
@@ -57,7 +55,8 @@ sh train_KT.sh
 
 ---
 
-## Results
+## Performance on Cityscapes
+All models are trained over 8 * NVIDIA RTX A6000
 
 | Method                     | Params (M) | FLOPs (G) | Val mIoU (%) |
 |----------------------------|------------|-----------|--------------|
