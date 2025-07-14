@@ -66,7 +66,7 @@ All models are trained over 8 * NVIDIA RTX A6000
 
 | Method                     | Params (M) | FLOPs (G) | Val mIoU (%) |
 |----------------------------|------------|-----------|--------------|
-| **T: DeepLabV3-ResNet101** | 61.1M      | 687.8G    | [78.07](https://drive.google.com/file/d/1rYTaVq_ooiAI4oFOcDP8K3SpSbjURGnX/view?usp=sharing)        |
+| **T: DeepLabV3-ResNet101** | 61.1M      | 687.8G    | [78.07](https://drive.google.com/file/d/1zUdhYPYCDCclWU3Wo7GbbTlM8ibQ_UC1/view?usp=sharing)        |
 | **S: DeepLabV3-ResNet18**  | 13.6M      | 159.0G    | 74.21        |
 | + **KT (Ours)**            | 13.6M      | 159.0G    | [77.98](https://drive.google.com/file/d/1QnNDCNMnqaUoc_n9p4opuoAYyeOfJaRw/view?usp=sharing)        |
 | **S: PSPNet-ResNet18**     | 12.9M      | 131.7G    | 72.55        |
@@ -78,18 +78,18 @@ All models are trained over 8 * NVIDIA RTX A6000
 
 | Method                     | Params (M) | FLOPs (G) | Val mIoU (%) |
 |----------------------------|------------|-----------|--------------|
-| **T: DeepLabV3-ResNet101** | 61.1M      | 687.8G    | 78.07        |
-| **S: DeepLabV3-ResNet18**  | 13.6M      | 159.0G    | 74.21        |
-| + **KT (Ours)**            | 13.6M      | 159.0G    | [77.98](https://drive.google.com/file/d/1QnNDCNMnqaUoc_n9p4opuoAYyeOfJaRw/view?usp=sharing)        |
-| **S: PSPNet-ResNet18**     | 12.9M      | 131.7G    | 72.55        |
-| + **KT (Ours)**            | 12.9M      | 131.7G    | [76.49](https://drive.google.com/file/d/1S1-R5pMF_zT4JR2vsYs1T9TmA1Ofk1xS/view?usp=sharing)        | 
+| **T: DeepLabV3-ResNet101** | 61.1M      | 384.84    | [77.67](https://drive.google.com/file/d/1rYTaVq_ooiAI4oFOcDP8K3SpSbjURGnX/view?usp=sharing)        |
+| **S: DeepLabV3-ResNet18**  | 13.6M      | 86.0G     | 73.21        |
+| + **KT (Ours)**            | 13.6M      | 86.0G     | [76.49](https://drive.google.com/file/d/1QnNDCNMnqaUoc_n9p4opuoAYyeOfJaRw/view?usp=sharing)        |
+| **S: PSPNet-ResNet18**     | 12.9M      | 67.6G     | 73.33        |
+| + **KT (Ours)**            | 12.9M      | 67.6G     | [75.52](https://drive.google.com/file/d/1S1-R5pMF_zT4JR2vsYs1T9TmA1Ofk1xS/view?usp=sharing)        | 
 
 ### Performance on ADE20K
 
 | Method                     | Params (M) | FLOPs (G) | Val mIoU (%) |
 |----------------------------|------------|-----------|--------------|
-| **T: DeepLabV3-ResNet101** | 61.1M      | 687.8G    | 78.07        |
-| **S: DeepLabV3-ResNet18**  | 13.6M      | 159.0G    | 74.21        |
-| + **KT (Ours)**            | 13.6M      | 159.0G    | [77.98](https://drive.google.com/file/d/1QnNDCNMnqaUoc_n9p4opuoAYyeOfJaRw/view?usp=sharing)        |
-| **S: PSPNet-ResNet18**     | 12.9M      | 131.7G    | 72.55        |
-| + **KT (Ours)**            | 12.9M      | 131.7G    | [76.49](https://drive.google.com/file/d/1S1-R5pMF_zT4JR2vsYs1T9TmA1Ofk1xS/view?usp=sharing)        | 
+| **T: DeepLabV3-ResNet101** | 61.1M      | 384.4G    | 42.70        |
+| **S: DeepLabV3-ResNet18**  | 13.6M      | 86.0G     | 32.91        |
+| + **KT (Ours)**            | 13.6M      | 86.0G     | [35.64](https://drive.google.com/file/d/1QnNDCNMnqaUoc_n9p4opuoAYyeOfJaRw/view?usp=sharing)        |
+| **S: PSPNet-ResNet18**     | 12.9M      | 67.6G     | 34.17        |
+| + **KT (Ours)**            | 12.9M      | 67.6G     | [35.77](https://drive.google.com/file/d/1S1-R5pMF_zT4JR2vsYs1T9TmA1Ofk1xS/view?usp=sharing)        | 
