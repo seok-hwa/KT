@@ -88,7 +88,7 @@ All models are trained over 8 * NVIDIA RTX A6000
 
 | Method                     | Params (M) | FLOPs (G) | Val mIoU (%) |
 |----------------------------|------------|-----------|--------------|
-| **T: DeepLabV3-ResNet101** | 61.1M      | 384.4G    | 42.70        |
+| **T: DeepLabV3-ResNet101** | 61.1M      | 384.4G    | [42.70](https://drive.google.com/file/d/1jlywjvZqKTUWCEwdFpPKHzrpNgeckMcO/view?usp=share_link)        |
 | **S: DeepLabV3-ResNet18**  | 13.6M      | 86.0G     | 32.91        |
 | + **KT (Ours)**            | 13.6M      | 86.0G     | [35.64](https://drive.google.com/file/d/1QnNDCNMnqaUoc_n9p4opuoAYyeOfJaRw/view?usp=sharing)        |
 | **S: PSPNet-ResNet18**     | 12.9M      | 67.6G     | 34.17        |
