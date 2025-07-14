@@ -59,8 +59,10 @@ sh train_KT.sh
 
 ---
 
-## Performance on Cityscapes
+## Result
 All models are trained over 8 * NVIDIA RTX A6000
+
+### Performance on Cityscapes
 
 | Method                     | Params (M) | FLOPs (G) | Val mIoU (%) |
 |----------------------------|------------|-----------|--------------|
@@ -68,6 +70,26 @@ All models are trained over 8 * NVIDIA RTX A6000
 | **S: DeepLabV3-ResNet18**  | 13.6M      | 159.0G    | 74.21        |
 | + **KT (Ours)**            | 13.6M      | 159.0G    | [77.98](https://drive.google.com/file/d/1QnNDCNMnqaUoc_n9p4opuoAYyeOfJaRw/view?usp=sharing)        |
 | **S: PSPNet-ResNet18**     | 12.9M      | 131.7G    | 72.55        |
-| + **KT (Ours)**            | 12.9M      | 131.7G    | 76.49        |
+| + **KT (Ours)**            | 12.9M      | 131.7G    | [76.49](https://drive.google.com/file/d/1S1-R5pMF_zT4JR2vsYs1T9TmA1Ofk1xS/view?usp=sharing)        |
 | **S: DeepLabV3-ResNet18**  | 3.2M       | 39.2G     | 73.12        |
-| + **KT (Ours)**            | 3.2M       | 39.2G     | 76.17        |
+| + **KT (Ours)**            | 3.2M       | 39.2G     | [76.17](https://drive.google.com/file/d/1TXjyKwI5WB97uSV4aHDY5knySVBXAimV/view?usp=sharing)        |
+
+### Performance on Pascal VOC
+
+| Method                     | Params (M) | FLOPs (G) | Val mIoU (%) |
+|----------------------------|------------|-----------|--------------|
+| **T: DeepLabV3-ResNet101** | 61.1M      | 687.8G    | 78.07        |
+| **S: DeepLabV3-ResNet18**  | 13.6M      | 159.0G    | 74.21        |
+| + **KT (Ours)**            | 13.6M      | 159.0G    | [77.98](https://drive.google.com/file/d/1QnNDCNMnqaUoc_n9p4opuoAYyeOfJaRw/view?usp=sharing)        |
+| **S: PSPNet-ResNet18**     | 12.9M      | 131.7G    | 72.55        |
+| + **KT (Ours)**            | 12.9M      | 131.7G    | [76.49](https://drive.google.com/file/d/1S1-R5pMF_zT4JR2vsYs1T9TmA1Ofk1xS/view?usp=sharing)        | 
+
+### Performance on ADE20K
+
+| Method                     | Params (M) | FLOPs (G) | Val mIoU (%) |
+|----------------------------|------------|-----------|--------------|
+| **T: DeepLabV3-ResNet101** | 61.1M      | 687.8G    | 78.07        |
+| **S: DeepLabV3-ResNet18**  | 13.6M      | 159.0G    | 74.21        |
+| + **KT (Ours)**            | 13.6M      | 159.0G    | [77.98](https://drive.google.com/file/d/1QnNDCNMnqaUoc_n9p4opuoAYyeOfJaRw/view?usp=sharing)        |
+| **S: PSPNet-ResNet18**     | 12.9M      | 131.7G    | 72.55        |
+| + **KT (Ours)**            | 12.9M      | 131.7G    | [76.49](https://drive.google.com/file/d/1S1-R5pMF_zT4JR2vsYs1T9TmA1Ofk1xS/view?usp=sharing)        | 
