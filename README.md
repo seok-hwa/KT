@@ -1,6 +1,9 @@
-# Knowledge Tailoring: Bridging the Teacher-Student Gap in Semantic Segmentation
+# **Knowledge Tailoring: Bridging the Teacher-Student Gap in Semantic Segmentation**
 
 > Seokhwa Cheung, Seungbeom Woo, Taehoon Kim, Wonjun Hwang
+> **Abstract:** Knowledge distillation transfers knowledge from a high-capacity teacher network to a compact student network, but a large capacity gap often limits the student’s ability to fully benefit from the teacher’s guidance. In semantic segmentation, another major challenge is the difficulty in predicting accurate object boundaries, as even strong teacher models can produce ambiguous or imprecise outputs. To address both challenges, we present Knowledge Tailoring, a novel distillation framework that adapts the teacher’s knowledge to better match the student’s representational capacity and learning dynamics. Much like a tailor adjusts an oversized suit to fit the wearer’s shape, our method reshapes the teacher’s abundant but misaligned knowledge into a form more suitable for the student. KT introduces feature tailoring, which restruc- tures intermediate features based on channel-wise correlation to narrow the representation gap, and logit tailoring, which improves boundary prediction by refining class-specific logits. The tailoring strategy evolves throughout training, offering guidance that aligns with the student’s progress. Experiments on Cityscapes, Pascal VOC, and
+ADE20K confirm that KT consistently enhances performance across a variety of architectures including DeepLabV3, PSPNet, and SegFormer
+
 ---
 
 ## Overview
