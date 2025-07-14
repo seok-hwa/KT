@@ -5,13 +5,12 @@
 
 ## Overview
 
-Knowledge Tailoring (KT) is a novel knowledge distillation framework designed to mitigate the **teacher-student gap** in semantic segmentation.  
+Knowledge Tailoring (KT) is a novel knowledge distillation framework designed to mitigate the teacher-student gap in semantic segmentation.  
 It introduces two key modules:
 
-- **Feature Tailoring (FT):** Tailors teacher features to match the capacity of the student, alleviating over-complex representations.
-- **Logit Tailoring (LT):** Refines teacher logits to reduce uncertainty and provide clearer supervision for boundary regions.
+- Feature Tailoring (FT): Tailors teacher features to match the capacity of the student, alleviating over-complex representations.
+- Logit Tailoring (LT): Refines teacher logits to reduce uncertainty and provide clearer supervision for boundary regions.
 
-KT effectively improves student performance without requiring extra models or significant computational overhead.
 
 ---
 
