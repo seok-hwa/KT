@@ -51,7 +51,8 @@ pip install opencv-python==4.5.1.48
 ---
 
 ## Training
-Example (Cityscapes)
+
+Before training, make sure to modify the train_KT.sh file according to your folder structure.
 
 ```bash
 sh train_KT.sh
@@ -60,7 +61,6 @@ sh train_KT.sh
 ---
 
 ## Result
-All models are trained over 8 * NVIDIA RTX A6000
 
 ### Performance on Cityscapes
 
