@@ -5,7 +5,7 @@
 
 ## Overview
 
-<div align=center><img src="https://github.com/seok-hwa/KT/edit/main//Figure1.png" width="60%"></div><br/>
+<div align=center><img src="https://github.com/seok-hwa/KT/Figure1.png" width="60%"></div><br/>
 
 
 Knowledge Tailoring (KT) is a novel knowledge distillation framework designed to mitigate the teacher-student gap in semantic segmentation.  
