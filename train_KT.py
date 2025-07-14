@@ -274,7 +274,7 @@ class Trainer(object):
                 t_outputs = self.t_model(images)
             s_outputs = self.s_model(images)
 
-            # Masking Loss
+            # Create class-specific mask
             target_mask = targets.clone()
             target_mask[target_mask == -1] = self.num_class
             target_shape = target_mask.shape
@@ -284,7 +284,7 @@ class Trainer(object):
             class_mask = class_mask[:self.num_class].permute(1, 0, 2, 3).contiguous()
             non_class_mask = -(class_mask - 1)
 
-            # Masking Loss
+            # Logit Tailoring
             tc_output = F.interpolate(t_outputs[0], args.crop_size, mode='nearest')
             st_output = F.interpolate(s_outputs[0], args.crop_size, mode='nearest')
 
@@ -321,7 +321,7 @@ class Trainer(object):
             t_n, t_c, t_h, t_w = tc_features.shape
             s_n, s_c, s_h, s_w = st_features.shape
 
-            # student wise feature reconstruction
+            # Feature Tailoring
             if iteration >= self.args.tuning_point:
                 for (tc_feature, st_feature) in zip(tc_features, st_features):
                     tmp_tc_feature = tc_feature
