@@ -62,6 +62,8 @@ sh train_KT.sh
 
 ## Result
 
+Click on the model performance (Val mIoU) in the table above to download the corresponding checkpoint.
+
 ### Performance on Cityscapes
 
 | Method                     | Params (M) | FLOPs (G) | Val mIoU (%) |
